@@ -1,0 +1,438 @@
+/* General style */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #FFFFFF;
+    color: #1C1C1C;
+}
+
+.section-padding {
+    padding: 1.75rem 5rem;
+}
+
+.section-margin {
+    margin: 1.75rem 5rem;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+.email {
+    text-decoration: underline;
+}
+
+/* header section */
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header .logo{
+    width: 88px;
+    height: 77px;
+}
+
+.header .nav_links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header .nav_links ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.header .nav_links ul li {
+    margin-left: 100px;
+}
+
+.header .nav_links ul li a{
+    font-weight: 500;
+    font-size: 24px;
+    color: #1C1C1C;
+}
+
+.header .nav_links .nav_book-table_btn {
+    font-size: 1rem;
+    line-height: 24px;
+    border: none;
+    padding: 0.75rem 1rem;
+    border-radius: 8px;
+    background-color: #1C1C1C;
+    color: #fff;
+    margin-left: 100px;
+    cursor: pointer;
+
+}
+
+
+
+/* toggle btn */
+header .toggle_container {
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.header .toggle {
+    width: 18px;
+    height: 1.5px;
+    background-color: #1B1B1B;
+    position: relative;
+    display: none;
+}
+
+.header .toggle::after {
+    content: '';
+    position: absolute;
+    top: 7px;
+    left: 0;
+    width: 18px;
+    height: 1.5px;
+    background-color: #1B1B1B;
+}
+
+.header .toggle::before {
+    content: '';
+    position: absolute;
+    bottom: 7px;
+    left: 0;
+    width: 18px;
+    height: 1.5px;
+    background-color: #1B1B1B;
+}
+
+/* hero section */
+.hero_container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 51px;
+}
+
+.hero_container .hero_img {
+    width: 49%;
+    border-radius: 4px;
+}
+
+.hero_container .hero_desc {
+    width: 49%;
+}
+
+.hero_title {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 48px;
+    line-height: 72px;
+}
+
+.hero_book_table-btn {
+    background-color: #1B1B1B;
+    border: none;
+    border-radius: 8px;
+    margin-top: 2rem;
+
+    font-family: 'Mulish';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 24px;
+    padding: 1.5rem;
+    letter-spacing: 0.2px;
+    color: #FFFFFF;
+}
+
+/* lunch section */
+
+.lunch_menu-container {
+    display: flex;
+    flex-direction: column;
+    margin-top: 7.875rem;
+}
+
+.lunch_menu-container h2{
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 48px;
+    padding-bottom: 1.875rem;
+}
+
+.lunch_menu-container .row{
+    display: flex;
+    justify-content: flex-start;
+    gap: 3rem;
+    margin-bottom: 2rem;
+}
+
+.lunch_menu-container .row .lunch_menu {
+    width: 411px;
+    cursor: pointer;
+}
+
+.lunch_menu-container .row .lunch_menu img{
+    width: 100%;
+    height: 282px;
+    border-radius: 4px;
+    object-fit: cover; 
+}
+
+.lunch_menu-container .row .lunch_menu .name{
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 36px;
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+}
+
+.lunch_menu-container .row .lunch_menu .desc{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+/* dinner section */
+
+.dinner_menu-container {
+    display: flex;
+    flex-direction: column;
+    margin: 5.875rem 0;
+}
+
+.dinner_menu-container h2{
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 48px;
+    padding-bottom: 1.875rem;
+}
+
+.dinner_menu-container .row{
+    display: flex;
+    justify-content: flex-start;
+    gap: 3rem;
+    margin-bottom: 2rem;
+}
+
+.dinner_menu-container .row .dinner_menu {
+    width: 411px;
+    cursor: pointer;
+}
+
+.dinner_menu-container .row .dinner_menu img{
+    border-radius: 4px;
+    width: 100%;
+    height: 282px;
+    object-fit: cover; 
+}
+
+.dinner_menu-container .row .dinner_menu .name{
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 36px;
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+}
+
+.dinner_menu-container .row .dinner_menu .desc{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+/* footer section */
+
+footer {
+    background-color: #1E1E1E;
+    color: #FFFFFF;
+    width: 100%;
+}
+
+footer .footer-container,
+.address-and-contact {
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.address-and-contact {
+    gap: 2.5rem;
+}
+
+footer .footer-container .footer_info{
+    padding: 2.1rem 0 4.5rem;
+    
+}
+
+footer .footer-container .footer_info h2{
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 48px;
+    padding-bottom: 1rem;
+}
+
+footer .footer-container .footer_info address{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+}
+
+footer .footer-container .contact ul li{
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+}
+
+footer 
+.footer-container 
+.footer_info 
+table td:first-child{
+    padding-right: 6rem;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+}
+
+/* Mobile responsive style */
+@media screen and (max-width: 600px) {
+    /* header */
+    .header {
+        margin: 24px;
+    }
+    .header .logo {
+        width: 44px;
+        height: 37px;
+    }
+    .header .nav_links {
+        display: none;
+    }
+    .header .toggle {
+        display: block;
+    }
+    .section-margin {
+        margin: 24px;
+    }
+    /* hero */
+    .hero_container {
+        display: block;
+    }
+    .hero_container .hero_img{
+        width: 100%;
+    }
+    .hero_container .hero_desc {
+        width: 100%;
+    }
+    .hero_container .hero_desc .hero_title {
+        font-size: 20px;
+        line-height: 30px;
+        padding: 16px 0 8px 0;
+
+    }
+
+    .hero_book_table-btn {
+        margin-top: 16px;
+        font-size: 16px;
+        padding: 0.7rem;
+    }
+    /* lunch */
+    .lunch_menu-container {
+        margin: 2.4rem 0;
+    }    
+    .lunch_menu-container h2 {
+        font-size: 24px;
+        line-height: 36px;
+        padding-bottom: 24px;
+        padding-top: 36px;
+    }  
+    .lunch_menu-container .row {
+        display: block;
+        margin-bottom: 0 ;
+      }
+
+    .lunch_menu-container .row .lunch_menu {
+        width: 100%;
+        margin-bottom: 1.5rem;
+    }
+    .lunch_menu-container .row .lunch_menu .name {
+        font-size: 14px;
+        line-height: 21px;
+        padding-top: 1rem;
+        padding-bottom: 0.5rem;
+    }
+    /* dinner */
+    .dinner_menu-container {
+        margin: 0 0 2.4rem 0;
+    }
+    .dinner_menu-container h2 {
+        font-size: 24px;
+        line-height: 36px;
+        padding-bottom: 24px;
+    }
+    .dinner_menu-container .row {
+        display: block;
+        margin: 0;
+    }
+
+    .dinner_menu-container .row .dinner_menu {
+        width: 100%;
+        margin-bottom: 1.5rem;
+    }
+    .dinner_menu-container .row .dinner_menu .name {
+        font-size: 14px;
+        line-height: 21px;
+        padding-top: 1rem;
+        padding-bottom: 0.5rem;
+    }
+    /* footer */
+    
+    .section-padding {
+        padding: 24px;
+      }
+
+    footer .footer-container .footer_info h2 {
+        font-size: 16px;
+        line-height: 24px;
+        padding-bottom: 0.5rem;
+    }
+    footer .footer-container .footer_info address {
+        font-size: 12px;
+        line-height: 18px;
+    }
+    footer .footer-container .contact ul li {
+        font-size: 12px;
+        line-height: 18px;
+    }
+    footer .footer-container .footer_info table td{
+        /* padding-right: 0; */
+        font-size: 12px;
+        line-height: 18px;
+    }
+    footer .footer-container .footer_info table td:first-child {
+        padding-right: 1rem;
+        font-size: 12px;
+        line-height: 18px;
+    }
+    .address-and-contact {
+        display: block;
+    }
+
+    .address {
+        margin-bottom: 32px;
+    }
+}
